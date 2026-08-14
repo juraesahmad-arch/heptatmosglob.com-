@@ -2,7 +2,7 @@ document.getElementById('inquiryForm').addEventListener('submit', function (e) {
   e.preventDefault(); // Mencegah reload halaman
 
   // 1. Masukkan Nomor WhatsApp Tujuan (Gunakan kode 62 di depan)
-  const noWaTujuan = "6285290559991"; 
+  const noWaTujuan = "6285881364710"; 
 
   // 2. Ambil nilai input dari form di website
   const namaUser = document.getElementById('nama').value;
@@ -19,6 +19,5 @@ document.getElementById('inquiryForm').addEventListener('submit', function (e) {
                     `Mohon informasi harga dan ketersediaannya. Terima kasih!`;
 
   // 4. Buka WhatsApp
-  const urlWA = `https://wa.me/${6285290559991}?text=${teksPesan}`;
-  window.open(urlWA, '_blank');
+ window.open(`https://wa.me/${whatsappNo}?text=${encodedText}`, '_blank');
 });
