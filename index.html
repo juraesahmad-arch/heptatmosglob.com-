@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAG Tires - Crafted for Performance. Engineered for Reliability</title>
+    <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Style CSS Eksternal -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header / Nav -->
+    <!-- Header / Navigasi -->
     <header>
         <div class="container navbar">
             <a href="#" class="logo">
@@ -16,13 +18,12 @@
                 <span class="logo-text">TIRES & RIMS</span>
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="active">Beranda</a></li>
-                <li><a href="#about">Profil & Visi Misi</a></li>
-                <li><a href="#technology">Teknologi</a></li>
-                <li><a href="#catalog">Katalog Produk</a></li>
-                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#home" class="active" onclick="closeMobileMenu()">Beranda</a></li>
+                <li><a href="#about" onclick="closeMobileMenu()">Profil & Visi Misi</a></li>
+                <li><a href="#technology" onclick="closeMobileMenu()">Teknologi</a></li>
+                <li><a href="#catalog" onclick="closeMobileMenu()">Katalog Produk</a></li>
+                <li><a href="#contact" onclick="closeMobileMenu()">Kontak</a></li>
             </ul>
-            <a href="#catalog" class="btn btn-primary" style="display: inline-block;">Katalog Ban</a>
             <div class="mobile-toggle" id="mobileToggle">
                 <i class="fas fa-bars"></i>
             </div>
@@ -36,7 +37,7 @@
                 <span class="hero-subtitle"><i class="fas fa-shield-alt"></i> Official Tire Catalogue & Company Profile</span>
                 <h1 class="hero-title">Crafted for Performance. <span>Engineered for Reliability.</span></h1>
                 <p class="hero-desc">
-                    Selamat datang di HAG Tires — destinasi utama solusi ban industri, truk heavy duty, OTR, solid forklift, ban dalam (inner tube), flap, dan steel rims berkinerja tinggi. Dirancang untuk daya tahan maksimal dan traktabilitas prima di segala medan operasional.
+                    Selamat datang di HAG Tires — destinasi utama solusi ban industri, truk heavy duty, OTR, solid forklift, ban dalam (inner tube), flap, dan steel rims berkinerja tinggi.
                 </p>
                 <div class="hero-btns">
                     <a href="#catalog" class="btn btn-primary"><i class="fas fa-th-large"></i> Jelajahi Katalog</a>
@@ -53,11 +54,11 @@
                     </div>
                     <div class="stat-item">
                         <h3>3<span> Layer</span></h3>
-                        <p>Teknologi Solid Tire</p>
+                        <p>Teknologi Solid</p>
                     </div>
                     <div class="stat-item">
                         <h3>200<span>%</span></h3>
-                        <p>Kapasitas Overload SHD</p>
+                        <p>Overload SHD</p>
                     </div>
                 </div>
             </div>
@@ -71,46 +72,34 @@
                 <span class="section-tag">Company Profile</span>
                 <h2 class="section-title">Profil Perusahaan & Visi Misi</h2>
                 <p class="section-desc">
-                    At HAG, we’re not just tire manufacturers; we’re your trusted companions on the journey. Committed to delivering reliable products and innovative solutions.
+                    At HAG, we’re not just tire manufacturers; we’re your trusted companions on the journey.
                 </p>
             </div>
 
             <div class="vm-grid">
-                <!-- Visi -->
                 <div class="vm-card">
-                    <div class="vm-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
+                    <div class="vm-icon"><i class="fas fa-eye"></i></div>
                     <h3>Visi Perusahaan</h3>
-                    <p>
-                        Menjadi penyedia solusi ban industri, pertambangan, logistik, dan komersial terdepan di Indonesia yang terpercaya, mengutamakan keamanan, ketahanan produk kelas dunia, serta inovasi berkelanjutan bagi seluruh mitra bisnis.
-                    </p>
+                    <p>Menjadi penyedia solusi ban industri, pertambangan, logistik, dan komersial terdepan di Indonesia yang terpercaya, mengutamakan keamanan dan ketahanan produk kelas dunia.</p>
                 </div>
 
-                <!-- Misi -->
                 <div class="vm-card">
-                    <div class="vm-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
+                    <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
                     <h3>Misi Perusahaan</h3>
                     <ul>
-                        <li>Menghadirkan rangkaian ban luar, ban mati (solid tire), ban dalam (tube), flap, dan rim berkualitas unggul dengan performa andal.</li>
-                        <li>Memberikan solusi efisiensi operasional tinggi bagi armada armada fleet, industri berat, tambang (OTR), dan pergudangan.</li>
-                        <li>Menjaga konsistensi standar keselamatan dan daya tahan ekstrem melalui kontrol kualitas yang ketat.</li>
-                        <li>Membangun kemitraan jangka panjang berlandaskan keandalan, respon cepat, dan kepuasan pelanggan.</li>
+                        <li>Menghadirkan ban luar, ban mati (solid tire), ban dalam (tube), flap, dan rim berkualitas unggul.</li>
+                        <li>Memberikan solusi efisiensi operasional tinggi bagi armada fleet dan industri berat.</li>
+                        <li>Menjaga konsistensi standar keselamatan melalui kontrol kualitas yang ketat.</li>
                     </ul>
                 </div>
 
-                <!-- Keunggulan HAG -->
                 <div class="vm-card">
-                    <div class="vm-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Komitmen & Nilai Utama</h3>
+                    <div class="vm-icon"><i class="fas fa-award"></i></div>
+                    <h3>Komitmen Utama</h3>
                     <ul>
-                        <li><strong>Dependable Traction:</strong> Daya cengkeram optimal di jalan raya maupun area off-road / mining.</li>
-                        <li><strong>Extreme Durability:</strong> Formula karet alam unggulan tahan goresan, gesekan, dan panas berlebih.</li>
-                        <li><strong>Safety & Peace of Mind:</strong> Menjamin keamanan perjalanan operasional tanpa downtime tak terduga.</li>
+                        <li><strong>Dependable Traction:</strong> Daya cengkeram optimal di segala medan.</li>
+                        <li><strong>Extreme Durability:</strong> Formula karet alam unggulan tahan aus & panas.</li>
+                        <li><strong>Safety & Peace of Mind:</strong> Menjamin keamanan tanpa downtime.</li>
                     </ul>
                 </div>
             </div>
@@ -122,10 +111,8 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Inovasi Rekayasa</span>
-                <h2 class="section-title">Teknologi Ban Solid 3-Layer & Heavy Duty</h2>
-                <p class="section-desc">
-                    Struktur rekayasa canggih HAG menjamin performa terbaik untuk beban berat industri dan kondisi operasional paling ekstrem.
-                </p>
+                <h2 class="section-title">Teknologi Ban Solid 3-Layer</h2>
+                <p class="section-desc">Struktur rekayasa canggih HAG menjamin performa terbaik untuk beban berat industri.</p>
             </div>
 
             <div class="tech-container">
@@ -135,21 +122,15 @@
                 <div class="tech-details">
                     <div class="layer-box">
                         <h4>TREAD LAYER <span>Lapisan Luar</span></h4>
-                        <p style="color: var(--text-muted); font-size: 14px;">
-                            Designed to endure wear and abrasions while at the same time provides high durability and tear resistance during work. Tahan aus, tidak mudah robek saat menangani beban berat.
-                        </p>
+                        <p>Tahan aus, tidak mudah robek saat menangani beban berat.</p>
                     </div>
                     <div class="layer-box">
                         <h4>CENTER LAYER <span>Lapisan Tengah</span></h4>
-                        <p style="color: var(--text-muted); font-size: 14px;">
-                            Natural rubber compound provides low heat buildup, rolling resistance, deflection without reducing its softness and pliancy. Meredam getaran dan mencegah penumpukan panas.
-                        </p>
+                        <p>Meredam getaran dan mencegah penumpukan panas berlebih.</p>
                     </div>
                     <div class="layer-box">
                         <h4>BASE LAYER <span>Lapisan Dasar</span></h4>
-                        <p style="color: var(--text-muted); font-size: 14px;">
-                            Combined with steel reinforced rings for stability and perfect grip on rim. Mencegah ban slip pada pelek (rim) bahkan di torsi tertinggi.
-                        </p>
+                        <p>Diperkuat ring baja untuk stabilitas dan grip sempurna pada rim.</p>
                     </div>
                 </div>
             </div>
@@ -162,126 +143,140 @@
             <div class="section-header">
                 <span class="section-tag">E-Katalog Lengkap</span>
                 <h2 class="section-title">Katalog Produk HAG</h2>
-                <p class="section-desc">Pilih kategori ban atau cari berdasarkan ukuran dan model spesifik di bawah ini.</p>
+                <p class="section-desc">Pilih ukuran spesifik produk, lalu klik tombol untuk isi form otomatis.</p>
             </div>
 
             <!-- Filter Buttons -->
             <div class="catalog-filters">
                 <button class="filter-btn active" onclick="filterCatalog('all', event)">Semua Produk</button>
-                <button class="filter-btn" onclick="filterCatalog('solid', event)">Solid Tires (Ban Mati)</button>
-                <button class="filter-btn" onclick="filterCatalog('truck-radial', event)">Truck & OTR Radial</button>
+                <button class="filter-btn" onclick="filterCatalog('solid', event)">Solid Tires</button>
+                <button class="filter-btn" onclick="filterCatalog('truck-radial', event)">Truck Radial</button>
                 <button class="filter-btn" onclick="filterCatalog('tube-flap', event)">Tube & Flap</button>
-                <button class="filter-btn" onclick="filterCatalog('rims', event)">Steel Wheel Rims</button>
+                <button class="filter-btn" onclick="filterCatalog('rims', event)">Steel Rims</button>
             </div>
 
             <!-- Search Bar -->
             <div class="search-box">
                 <i class="fas fa-search"></i>
-                <input type="text" id="searchInput" onkeyup="searchCatalog()" placeholder="Cari ukuran ban, pola kembang, atau tipe valve (misal: 10.00R20, S2000, TR78A)...">
+                <input type="text" id="searchInput" onkeyup="searchCatalog()" placeholder="Cari ukuran ban, pola, atau spesifikasi...">
             </div>
 
             <!-- Catalog Cards Grid -->
             <div class="catalog-grid" id="catalogGrid">
                 
-                <!-- Product 1: Solid Tire S2000 -->
+                <!-- Product 1 -->
                 <div class="catalog-card" data-category="solid" data-title="solid tire s2000 forklift black non marking 5.00-8 6.00-9 7.00-12 28x9-15">
                     <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Solid Tire S2000" class="card-img">
                     <span class="card-badge">Forklift Solid</span>
                     <div class="card-body">
-                        <span class="card-category">Ban Mati Forklift</span>
+                        <span class="card-category">Ban Solid Forklift</span>
                         <h3 class="card-title">HAG Solid Tire S2000</h3>
-                        <p class="card-desc">Ban solid forklift 3-Layer performa tinggi. Tersedia varian Solid Black & Non-Marking (White/Grey). Anti bocor & bebas perawatan.</p>
-                        <div class="card-specs">
-                            <div class="spec-row"><span class="spec-label">Struktur:</span><span class="spec-value">3-Layer Premium</span></div>
-                            <div class="spec-row"><span class="spec-label">Ukuran Populer:</span><span class="spec-value">5.00-8, 6.00-9, 7.00-12, 28x9-15</span></div>
-                            <div class="spec-row"><span class="spec-label">Opsi Rim:</span><span class="spec-value">STD & LIP (Quick Fitting)</span></div>
+                        <p class="card-desc">Ban solid forklift 3-Layer performa tinggi. Anti bocor & bebas perawatan.</p>
+                        
+                        <div class="product-select-group">
+                            <label><i class="fas fa-ruler-combined"></i> Pilih Ukuran Ban:</label>
+                            <select class="product-select" id="size-S2000">
+                                <option value="5.00-8 (Solid / 3.00D)">5.00-8 (Load 1,090 kg)</option>
+                                <option value="16x6-8 (Solid / 4.33R)">16x6-8 (Load 1,150 kg)</option>
+                                <option value="18x7-8 (Solid / 4.33R)">18x7-8 (Load 1,650 kg)</option>
+                                <option value="6.00-9 (Solid / 4.00E)">6.00-9 (Load 1,450 kg)</option>
+                                <option value="21x8-9 (Solid / 6.00E)">21x8-9 (Load 2,120 kg)</option>
+                                <option value="6.50-10 (Solid / 5.00F)">6.50-10 (Load 1,800 kg)</option>
+                                <option value="7.00-12 (Solid / 5.00S)">7.00-12 (Load 2,240 kg)</option>
+                                <option value="28x9-15 (Solid / 7.00)">28x9-15 / 8.15-15 (Load 2,650 kg)</option>
+                                <option value="8.25-15 (Solid / 6.50)">8.25-15 (Load 3,550 kg)</option>
+                            </select>
                         </div>
-                        <button class="btn btn-outline" style="width: 100%; border-color: var(--primary); color: var(--primary);" onclick="openModal('modalS2000')"><i class="fas fa-table"></i> Lihat Table Specs</button>
+
+                        <div class="card-actions">
+                            <button class="btn btn-primary" onclick="selectProductToOrder('Ban Solid Forklift', 'HAG Solid Tire S2000', 'size-S2000')"><i class="fab fa-whatsapp"></i> Pesan Ukuran Ini</button>
+                            <button class="btn btn-outline btn-specs" onclick="openModal('modalS2000')"><i class="fas fa-table"></i> Tabel Specs</button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Product 2: Techking / Radial Heavy Duty TKAM HD / S -->
+                <!-- Product 2 -->
                 <div class="catalog-card" data-category="truck-radial" data-title="tkam hd super am s truck radial 10.00r20 11.00r20 shd long mileage">
                     <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=600&q=80" alt="TKAM HD Radial Tire" class="card-img">
                     <span class="card-badge">Super Heavy Duty</span>
                     <div class="card-body">
-                        <span class="card-category">Truck Radial & OTR</span>
+                        <span class="card-category">Ban Truk Radial Heavy Duty</span>
                         <h3 class="card-title">TKAM HD / SUPER AM S</h3>
-                        <p class="card-desc">Ban luar radial posisi All Position untuk truk beban berat (Overload 200%). Dirancang untuk kondisi Mix Road & On Road jarak jauh.</p>
-                        <div class="card-specs">
-                            <div class="spec-row"><span class="spec-label">Max Overload:</span><span class="spec-value">200% - 250%</span></div>
-                            <div class="spec-row"><span class="spec-label">Ukuran:</span><span class="spec-value">10.00R20, 11.00R20, 12.00R24</span></div>
-                            <div class="spec-row"><span class="spec-label">Kondisi Jalan:</span><span class="spec-value">70% On Road / 30% Off Road</span></div>
+                        <p class="card-desc">Ban luar radial posisi All Position untuk truk beban berat (Overload 200%).</p>
+                        
+                        <div class="product-select-group">
+                            <label><i class="fas fa-ruler-combined"></i> Pilih Ukuran Ban:</label>
+                            <select class="product-select" id="size-TKAM">
+                                <option value="7.50R16 14PR">7.50R16 14PR (Single Load 1,500kg)</option>
+                                <option value="8.25R16 16PR">8.25R16 16PR (Single Load 1,800kg)</option>
+                                <option value="10.00R20 TKAM HD 18PR">10.00R20 TKAM HD 18PR (Single Load 3,250kg)</option>
+                                <option value="11.00R20 SUPER AM 18PR">11.00R20 SUPER AM 18PR (Single Load 3,550kg)</option>
+                                <option value="12.00R24 TKDM III 20PR">12.00R24 TKDM III 20PR (Single Load 4,500kg)</option>
+                                <option value="13R22.5 Tubeless 18PR">13R22.5 Tubeless 18PR (Single Load 3,750kg)</option>
+                            </select>
                         </div>
-                        <button class="btn btn-outline" style="width: 100%; border-color: var(--primary); color: var(--primary);" onclick="openModal('modalTKAM')"><i class="fas fa-table"></i> Lihat Table Specs</button>
+
+                        <div class="card-actions">
+                            <button class="btn btn-primary" onclick="selectProductToOrder('Ban Truk Radial Heavy Duty', 'TKAM HD / SUPER AM S', 'size-TKAM')"><i class="fab fa-whatsapp"></i> Pesan Ukuran Ini</button>
+                            <button class="btn btn-outline btn-specs" onclick="openModal('modalS2000')"><i class="fas fa-table"></i> Tabel Specs</button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Product 3: Tube & Flap Heavy Duty -->
+                <!-- Product 3 -->
                 <div class="catalog-card" data-category="tube-flap" data-title="heavy duty inner tube flap truck otr tr13 tr75a tr177a tr78a tr179 tr218">
                     <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=600&q=80" alt="Heavy Duty Tube & Flap" class="card-img">
                     <span class="card-badge">Tube & Flap</span>
                     <div class="card-body">
                         <span class="card-category">Ban Dalam & Flap</span>
                         <h3 class="card-title">Heavy Duty Tube & Flap</h3>
-                        <p class="card-desc">Ban dalam elastisitas tinggi dan flap perlindungan pelek untuk truk, bus, forklift, dan alat berat OTR. Lengkap dengan valve metal presisi.</p>
-                        <div class="card-specs">
-                            <div class="spec-row"><span class="spec-label">Valve Standard:</span><span class="spec-value">TR13, TR75A, TR78A, TR177A, TR179</span></div>
-                            <div class="spec-row"><span class="spec-label">Kemasan:</span><span class="spec-value">5 - 10 Pcs / Karung (Sack)</span></div>
-                            <div class="spec-row"><span class="spec-label">Ukuran Truck/OTR:</span><span class="spec-value">7.50R16 s/d 23.5-25</span></div>
+                        <p class="card-desc">Ban dalam elastisitas tinggi dan flap perlindungan pelek lengkap dengan valve metal.</p>
+                        
+                        <div class="product-select-group">
+                            <label><i class="fas fa-ruler-combined"></i> Pilih Ukuran Tube / Flap:</label>
+                            <select class="product-select" id="size-Tube">
+                                <option value="Ban Dalam 5.00R12 / 5.00R13 (TR13)">Ban Dalam 5.00R12 / 5.00R13 (TR13)</option>
+                                <option value="Ban Dalam 7.00/7.50R15 (TR75A / TR177A)">Ban Dalam 7.00/7.50R15 (TR75A)</option>
+                                <option value="Ban Dalam 7.50R16 / 8.25R16 (TR77A / TR78A)">Ban Dalam 7.50R16 / 8.25R16 (TR78A)</option>
+                                <option value="Ban Dalam 9.00R20 / 10.00R20 (TR78A / TR179A)">Ban Dalam 9.00R20 / 10.00R20 (TR179A)</option>
+                                <option value="Ban Dalam 11.00R20 / 12.00R20 (TR179A / TR218)">Ban Dalam 11.00R20 / 12.00R20 (TR218)</option>
+                                <option value="Flap OTR 1300/1400-24">Flap OTR 1300/1400-24</option>
+                                <option value="Flap OTR 17.5-25 / 20.5-25 / 23.5-25">Flap OTR 17.5-25 / 20.5-25 / 23.5-25</option>
+                            </select>
                         </div>
-                        <button class="btn btn-outline" style="width: 100%; border-color: var(--primary); color: var(--primary);" onclick="openModal('modalTube')"><i class="fas fa-table"></i> Lihat Table Specs</button>
+
+                        <div class="card-actions">
+                            <button class="btn btn-primary" onclick="selectProductToOrder('Ban Dalam & Flap', 'Heavy Duty Tube & Flap', 'size-Tube')"><i class="fab fa-whatsapp"></i> Pesan Ukuran Ini</button>
+                            <button class="btn btn-outline btn-specs" onclick="openModal('modalS2000')"><i class="fas fa-table"></i> Tabel Specs</button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Product 4: Steel Wheel Rims -->
+                <!-- Product 4 -->
                 <div class="catalog-card" data-category="rims" data-title="steel wheel rims pelek velg 8.00-20 7.50-20 8.50-20 6.00-16 8.50-24 8h 10h 5h 6h">
                     <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=600&q=80" alt="Steel Wheel Rims" class="card-img">
                     <span class="card-badge">Steel Rim</span>
                     <div class="card-body">
-                        <span class="card-category">Pelek Baja Industri</span>
+                        <span class="card-category">Steel Wheel Rims (Pelek)</span>
                         <h3 class="card-title">Steel Wheel Rims (Pelek)</h3>
-                        <p class="card-desc">Pelek baja heavy duty untuk truk dan armada industri. Presisi tinggi, tahan benturan keras, dan kompatibel dengan berbagai susunan baut.</p>
-                        <div class="card-specs">
-                            <div class="spec-row"><span class="spec-label">Material:</span><span class="spec-value">High Tensile Steel Plate</span></div>
-                            <div class="spec-row"><span class="spec-label">Tipe Baut:</span><span class="spec-value">5H-12mm, 6H-12mm, 8H-16mm, 10H-16mm</span></div>
-                            <div class="spec-row"><span class="spec-label">Ukuran Rim:</span><span class="spec-value">6.00-16 s/d 8.50-24</span></div>
+                        <p class="card-desc">Pelek baja heavy duty untuk truk dan armada industri presisi tinggi.</p>
+                        
+                        <div class="product-select-group">
+                            <label><i class="fas fa-ruler-combined"></i> Pilih Spesifikasi Rim:</label>
+                            <select class="product-select" id="size-Rims">
+                                <option value="Rim 8.00-20 - 8H - 16mm">Rim 8.00-20 - 8 Lubang - 16mm</option>
+                                <option value="Rim 7.50-20 - 8H - 16mm">Rim 7.50-20 - 8 Lubang - 16mm</option>
+                                <option value="Rim 8.50-20 - 10H - 16mm">Rim 8.50-20 - 10 Lubang - 16mm</option>
+                                <option value="Rim 6.00-16 - 5H - 12mm">Rim 6.00-16 - 5 Lubang - 12mm</option>
+                                <option value="Rim 6.00-16 - 6H - 12mm">Rim 6.00-16 - 6 Lubang - 12mm</option>
+                                <option value="Rim 8.50-24 - 10H - 16mm">Rim 8.50-24 - 10 Lubang - 16mm</option>
+                            </select>
                         </div>
-                        <button class="btn btn-outline" style="width: 100%; border-color: var(--primary); color: var(--primary);" onclick="openModal('modalRims')"><i class="fas fa-table"></i> Lihat Table Specs</button>
-                    </div>
-                </div>
 
-                <!-- Product 5: Mining & Off-Road DH Series (DH701 / DH703) -->
-                <div class="catalog-card" data-category="truck-radial" data-title="dh701 dh703 mixed series mining logging 12.00r24 10.00r20 11.00r20 12.00r20">
-                    <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=600&q=80" alt="DH Mining Series" class="card-img">
-                    <span class="card-badge">Mining & Logging</span>
-                    <div class="card-body">
-                        <span class="card-category">Ban Tambang (OTR)</span>
-                        <h3 class="card-title">DH701 / DH703 Mining Series</h3>
-                        <p class="card-desc">Didesain khusus untuk area pertambangan dan perkebunan berbatu (Mining & Logging). Kembang lug tebal tahan tusukan batu.</p>
-                        <div class="card-specs">
-                            <div class="spec-row"><span class="spec-label">Aplikasi:</span><span class="spec-value">Short & Medium Haul / Mining</span></div>
-                            <div class="spec-row"><span class="spec-label">Pilihan Ply Rating:</span><span class="spec-value">16PR, 18PR, 20PR</span></div>
-                            <div class="spec-row"><span class="spec-label">Ukuran Utama:</span><span class="spec-value">12.00R24, 11.00R20, 12.00R20</span></div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary" onclick="selectProductToOrder('Steel Wheel Rims (Pelek)', 'Steel Wheel Rims (Pelek)', 'size-Rims')"><i class="fab fa-whatsapp"></i> Pesan Ukuran Ini</button>
+                            <button class="btn btn-outline btn-specs" onclick="openModal('modalS2000')"><i class="fas fa-table"></i> Tabel Specs</button>
                         </div>
-                        <button class="btn btn-outline" style="width: 100%; border-color: var(--primary); color: var(--primary);" onclick="openModal('modalDH')"><i class="fas fa-table"></i> Lihat Table Specs</button>
-                    </div>
-                </div>
-
-                <!-- Product 6: YTH1 / YT919 Mixed Series -->
-                <div class="catalog-card" data-category="truck-radial" data-title="yth1 yt919 ld851 hd616 7.50r16 8.25r16 9.00r20 10.00r20 11.00r20 12.00r20 long haul">
-                    <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=600&q=80" alt="YTH1 Commercial Tire" class="card-img">
-                    <span class="card-badge">Long Mileage</span>
-                    <div class="card-body">
-                        <span class="card-category">Truck Commercial Radial</span>
-                        <h3 class="card-title">YTH1 / YT919 / LD851 Series</h3>
-                        <p class="card-desc">Ban radial serbaguna untuk truk engkel, colt diesel, hingga tronton. Efisiensi bahan bakar tinggi dan mileage ekstra panjang.</p>
-                        <div class="card-specs">
-                            <div class="spec-row"><span class="spec-label">Fitur:</span><span class="spec-value">Anti-wear & Self-cleaning Tread</span></div>
-                            <div class="spec-row"><span class="spec-label">Ukuran Engkel/CDD:</span><span class="spec-value">7.50R16, 8.25R16, 8.25R20</span></div>
-                            <div class="spec-row"><span class="spec-label">Ukuran Tronton:</span><span class="spec-value">9.00R20, 10.00R20, 11R22.5</span></div>
-                        </div>
-                        <button class="btn btn-outline" style="width: 100%; border-color: var(--primary); color: var(--primary);" onclick="openModal('modalYTH')"><i class="fas fa-table"></i> Lihat Table Specs</button>
                     </div>
                 </div>
 
@@ -289,15 +284,12 @@
         </div>
     </section>
 
-    <!-- Modals for Specifications Tables -->
-
-    <!-- Modal 1: Solid Tires -->
+    <!-- Modal Specs -->
     <div class="modal" id="modalS2000">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('modalS2000')">&times;</span>
             <div class="modal-header">
-                <h3 class="modal-title">Spesifikasi HAG Solid Tires (S1000 / S2000 / S3000)</h3>
-                <p style="color: var(--text-muted); font-size: 14px;">Beban maksimum dan dimensi ban mati forklift industri</p>
+                <h3 class="modal-title">Spesifikasi HAG Solid Tires</h3>
             </div>
             <div class="table-responsive">
                 <table>
@@ -307,255 +299,64 @@
                             <th>Type / Rim</th>
                             <th>O.D (mm)</th>
                             <th>S.W (mm)</th>
-                            <th>Weight (kg)</th>
-                            <th>Load Forklift (Up to 25km/h)</th>
+                            <th>Load (kg)</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>5.00-8</td><td>Solid / 3.00D</td><td>453</td><td>120</td><td>16.0</td><td>1,090 kg</td></tr>
-                        <tr><td>16x6-8</td><td>Solid / 4.33R</td><td>414</td><td>148</td><td>16.3</td><td>1,150 kg</td></tr>
-                        <tr><td>18x7-8</td><td>Solid / 4.33R</td><td>451</td><td>148</td><td>20.8</td><td>1,650 kg</td></tr>
-                        <tr><td>6.00-9</td><td>Solid / 4.00E</td><td>528</td><td>141</td><td>28.0</td><td>1,450 kg</td></tr>
-                        <tr><td>21x8-9</td><td>Solid / 6.00E</td><td>523</td><td>186</td><td>35.4</td><td>2,120 kg</td></tr>
-                        <tr><td>6.50-10</td><td>Solid / 5.00F</td><td>574</td><td>195</td><td>37.0</td><td>1,800 kg</td></tr>
-                        <tr><td>23x9-10</td><td>Solid / 6.50E</td><td>584</td><td>202</td><td>47.8</td><td>2,650 kg</td></tr>
-                        <tr><td>7.00-12</td><td>Solid / 5.00S</td><td>657</td><td>165</td><td>47.9</td><td>2,240 kg</td></tr>
-                        <tr><td>28x9-15 (8.15-15)</td><td>Solid / 7.00</td><td>697</td><td>206</td><td>59.5</td><td>2,650 kg</td></tr>
-                        <tr><td>8.25-15</td><td>Solid / 6.50</td><td>814</td><td>196</td><td>60.4</td><td>3,550 kg</td></tr>
+                        <tr><td>5.00-8</td><td>Solid / 3.00D</td><td>453</td><td>120</td><td>1,090 kg</td></tr>
+                        <tr><td>16x6-8</td><td>Solid / 4.33R</td><td>414</td><td>148</td><td>1,150 kg</td></tr>
+                        <tr><td>18x7-8</td><td>Solid / 4.33R</td><td>451</td><td>148</td><td>1,650 kg</td></tr>
+                        <tr><td>6.00-9</td><td>Solid / 4.00E</td><td>528</td><td>141</td><td>1,450 kg</td></tr>
+                        <tr><td>7.00-12</td><td>Solid / 5.00S</td><td>657</td><td>165</td><td>2,240 kg</td></tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 
-    <!-- Modal 2: TKAM Truck Radial -->
-    <div class="modal" id="modalTKAM">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('modalTKAM')">&times;</span>
-            <div class="modal-header">
-                <h3 class="modal-title">Spesifikasi Ban Radial Truck Heavy Duty (TKAM / SUPER AM)</h3>
-                <p style="color: var(--text-muted); font-size: 14px;">Index Beban, Ply Rating, dan Tekanan Angin Standard</p>
-            </div>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Size</th>
-                            <th>PR</th>
-                            <th>LI & SS</th>
-                            <th>Single Load (kg)</th>
-                            <th>Dual Load (kg)</th>
-                            <th>Tread Depth (mm)</th>
-                            <th>Standard Pressure</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>7.50R16</td><td>14</td><td>122/118L</td><td>1,500 kg</td><td>1,320 kg</td><td>13.5 mm</td><td>110 psi</td></tr>
-                        <tr><td>8.25R16</td><td>16</td><td>128/124L</td><td>1,800 kg</td><td>1,600 kg</td><td>14.5 mm</td><td>110 psi</td></tr>
-                        <tr><td>10.00R20 TKAM HD</td><td>18</td><td>149/146K</td><td>3,250 kg</td><td>3,000 kg</td><td>16.0 mm</td><td>135 psi</td></tr>
-                        <tr><td>11.00R20 SUPER AM</td><td>18</td><td>152/149L</td><td>3,550 kg</td><td>3,250 kg</td><td>16.0 mm</td><td>135 psi</td></tr>
-                        <tr><td>12.00R24 TKDM III</td><td>20</td><td>160/157F</td><td>4,500 kg</td><td>4,125 kg</td><td>32.0 mm</td><td>130 psi</td></tr>
-                        <tr><td>13R22.5 Tubeless</td><td>18</td><td>154/151K</td><td>3,750 kg</td><td>3,450 kg</td><td>24.0 mm</td><td>120 psi</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 3: Tube & Flap -->
-    <div class="modal" id="modalTube">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('modalTube')">&times;</span>
-            <div class="modal-header">
-                <h3 class="modal-title">Daftar Ukuran Inner Tube & Flap HAG</h3>
-                <p style="color: var(--text-muted); font-size: 14px;">Tipe pentil (valve) dan kemasan karung</p>
-            </div>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Ukuran Ban Dalam</th>
-                            <th>Tipe Valve Standard</th>
-                            <th>Kemasan / Sack</th>
-                            <th>Ukuran Flap OTR</th>
-                            <th>Tipe Flap</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>5.00R12 / 5.00R13</td><td>TR 13</td><td>10 Pcs</td><td>1300/1400-24</td><td>Standard / Metal Plate</td></tr>
-                        <tr><td>7.00/7.50R15</td><td>TR 75A / TR 177A</td><td>10 Pcs</td><td>17.5-25</td><td>Standard / Metal Plate</td></tr>
-                        <tr><td>7.50R16 / 8.25R16</td><td>TR 77A / TR 78A</td><td>10 Pcs</td><td>20.5-25</td><td>Standard / Metal Plate</td></tr>
-                        <tr><td>9.00R20 / 10.00R20</td><td>TR 78A / TR 179A</td><td>5 Pcs</td><td>23.5-25</td><td>Metal Plate Heavy Duty</td></tr>
-                        <tr><td>11.00R20 / 12.00R20</td><td>TR 179A / TR 218</td><td>5 Pcs</td><td>1300/1400-25</td><td>Metal Plate Heavy Duty</td></tr>
-                        <tr><td>13.00/14.00R24</td><td>TRJ 1175C / TR 220</td><td>3 Pcs</td><td>18.4-34</td><td>Heavy Duty Agriculture</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 4: Rims -->
-    <div class="modal" id="modalRims">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('modalRims')">&times;</span>
-            <div class="modal-header">
-                <h3 class="modal-title">Spesifikasi Steel Wheel Rims</h3>
-                <p style="color: var(--text-muted); font-size: 14px;">Pelek Truk & Alat Berat HAG</p>
-            </div>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>Deskripsi Produk</th>
-                            <th>Spesifikasi Rim (Lubang & Ketebalan)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>1</td><td>Steel Wheel Rims</td><td>8.00-20 - 8H - 16mm</td></tr>
-                        <tr><td>2</td><td>Steel Wheel Rims</td><td>7.50-20 - 8H - 16mm</td></tr>
-                        <tr><td>3</td><td>Steel Wheel Rims</td><td>8.50-20 - 10H - 16mm</td></tr>
-                        <tr><td>4</td><td>Steel Wheel Rims</td><td>6.00-16 - 5H - 12mm</td></tr>
-                        <tr><td>5</td><td>Steel Wheel Rims</td><td>8.00-20 - 10H - 16mm</td></tr>
-                        <tr><td>6</td><td>Steel Wheel Rims</td><td>7.50-20 - 10H - 16mm</td></tr>
-                        <tr><td>7</td><td>Steel Wheel Rims</td><td>8.50-24 - 10H - 16mm</td></tr>
-                        <tr><td>8</td><td>Steel Wheel Rims</td><td>6.00-16 - 6H - 12mm</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 5: DH Series -->
-    <div class="modal" id="modalDH">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('modalDH')">&times;</span>
-            <div class="modal-header">
-                <h3 class="modal-title">Spesifikasi DH701 & DH703 Mining Series</h3>
-            </div>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Size</th>
-                            <th>PR</th>
-                            <th>Load Index</th>
-                            <th>Speed Rating</th>
-                            <th>Rim</th>
-                            <th>Max Load (Single/Dual)</th>
-                            <th>Max Pressure</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>12.00R24 DH701</td><td>20</td><td>160/157</td><td>K (110 km/h)</td><td>8.50</td><td>4,500 / 4,125 kg</td><td>900 kPa</td></tr>
-                        <tr><td>10.00R20 DH701</td><td>18</td><td>149/146</td><td>K (110 km/h)</td><td>7.50</td><td>3,250 / 3,000 kg</td><td>930 kPa</td></tr>
-                        <tr><td>11.00R20 DH703</td><td>18</td><td>152/149</td><td>K (110 km/h)</td><td>8.00</td><td>3,550 / 3,250 kg</td><td>930 kPa</td></tr>
-                        <tr><td>12.00R20 DH703</td><td>20</td><td>156/153</td><td>K (110 km/h)</td><td>8.50</td><td>4,000 / 3,650 kg</td><td>900 kPa</td></tr>
-                        <tr><td>13R22.5 DH703</td><td>18</td><td>154/151</td><td>L (120 km/h)</td><td>9.75</td><td>3,750 / 3,450 kg</td><td>850 kPa</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 6: YTH Series -->
-    <div class="modal" id="modalYTH">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('modalYTH')">&times;</span>
-            <div class="modal-header">
-                <h3 class="modal-title">Spesifikasi YTH1 / YT919 / LD851 Commercial Series</h3>
-            </div>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Size</th>
-                            <th>PR</th>
-                            <th>Load Index</th>
-                            <th>Speed Rating</th>
-                            <th>Rim</th>
-                            <th>Max Load (Single/Dual)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>6.50R16 YTH1</td><td>12</td><td>110/105</td><td>L (120 km/h)</td><td>4.50</td><td>1,060 / 925 kg</td></tr>
-                        <tr><td>7.00R16 YTH1</td><td>14</td><td>118/114</td><td>L (120 km/h)</td><td>5.50F</td><td>1,500 / 1,320 kg</td></tr>
-                        <tr><td>7.50R16 YT919</td><td>14</td><td>122/118</td><td>K (110 km/h)</td><td>6.00G</td><td>1,500 / 1,320 kg</td></tr>
-                        <tr><td>8.25R16 LD851</td><td>16</td><td>128/124</td><td>K (110 km/h)</td><td>6.50H</td><td>1,800 / 1,600 kg</td></tr>
-                        <tr><td>11R22.5 RT906</td><td>16</td><td>148/145</td><td>K (110 km/h)</td><td>8.25</td><td>3,150 / 2,900 kg</td></tr>
-                        <tr><td>315/80R22.5 YTH1</td><td>20</td><td>156/150</td><td>L (120 km/h)</td><td>9.00</td><td>4,125 / 3,650 kg</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact & Footer Section -->
+    <!-- Contact & Form Section -->
     <section class="contact-section" id="contact">
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
                     <span class="section-tag">Hubungi Kami</span>
-                    <h3>Siap Melayani Armada & Industri Anda</h3>
-                    <p>Dapatkan penawaran harga khusus grosir, pengadaan armada fleet, atau konsultasi pemiihan ban yang paling sesuai dengan kebutuhan operasional Anda.</p>
+                    <h3>Siap Melayani Armada Anda</h3>
+                    <p>Dapatkan penawaran harga khusus grosir dan pengadaan armada fleet.</p>
 
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
                         <div class="contact-details">
-                            <h5>Kantor Pusat / Representative</h5>
-                            <p>Jakarta Central Industrial Estate, Indonesia</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h5>Telepon & WhatsApp</h5>
-                            <p>+62 858-77435-417</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h5>Email Pertanyaan & Orders</h5>
-                            <p>sales@hag-tires.co.id / info@hag-tires.co.id</p>
+                            <h5>Telepon / WhatsApp</h5>
+                            <p>+62 852-9055-9991</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-form">
-                    <h4 style="color: #fff; font-size: 20px; margin-bottom: 20px;">Kirim Pesan & Inquiry</h4>
+                    <h4>Formulir Pemesanan</h4>
                     <form onsubmit="handleFormSubmit(event)">
                         <div class="form-group">
                             <label>Nama Lengkap / Perusahaan</label>
-                            <input type="text" id="namaInput" class="form-control" placeholder="Contoh: PT Transport Logistic" required>
+                            <input type="text" id="namaInput" class="form-control" placeholder="Nama Anda / Perusahaan" required>
                         </div>
                         <div class="form-group">
-                            <label>Email & Nomor WhatsApp</label>
-                            <input type="text" id="kontakInput" class="form-control" placeholder="Contoh: manager@transport.com / 0812..." required>
+                            <label>Nomor WhatsApp</label>
+                            <input type="text" id="kontakInput" class="form-control" placeholder="0812..." required>
                         </div>
                         <div class="form-group">
-                            <label>Kategori Produk yang Diminati</label>
+                            <label>Kategori Produk</label>
                             <select id="kategoriInput" class="form-control">
                                 <option value="Ban Solid Forklift">Ban Solid Forklift</option>
                                 <option value="Ban Truk Radial Heavy Duty">Ban Truk Radial Heavy Duty</option>
-                                <option value="Ban Tambang & OTR">Ban Tambang & OTR</option>
                                 <option value="Ban Dalam & Flap">Ban Dalam & Flap</option>
                                 <option value="Steel Wheel Rims (Pelek)">Steel Wheel Rims (Pelek)</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Pesan / Detail Ukuran & Kuantitas</label>
-                            <textarea id="pesanInput" class="form-control" placeholder="Tuliskan ukuran ban, jumlah unit, dan lokasi pengiriman..." required></textarea>
+                            <label>Detail Pesanan / Ukuran</label>
+                            <textarea id="pesanInput" class="form-control" placeholder="Pesan ukuran akan otomatis terisi di sini..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fab fa-whatsapp"></i> Kirim Inquiry via WhatsApp</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fab fa-whatsapp"></i> Kirim Ke WhatsApp</button>
                     </form>
                 </div>
             </div>
@@ -565,19 +366,23 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 PT HAG Tire & Rims. All Rights Reserved. Designed for High Performance & Durability.</p>
+            <p>&copy; 2026 PT HAG Tire & Rims. All Rights Reserved.</p>
         </div>
     </footer>
 
     <!-- JavaScript Interactivity -->
     <script>
-        // Mobile Navigation Toggle
+        // Toggle Nav Mobile
         const mobileToggle = document.getElementById('mobileToggle');
         const navLinks = document.getElementById('navLinks');
 
         mobileToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
+
+        function closeMobileMenu() {
+            navLinks.classList.remove('active');
+        }
 
         // Filter Catalog
         function filterCatalog(category, e) {
@@ -595,7 +400,7 @@
             });
         }
 
-        // Live Search Catalog
+        // Search Catalog
         function searchCatalog() {
             const query = document.getElementById('searchInput').value.toLowerCase();
             const cards = document.querySelectorAll('.catalog-card');
@@ -610,7 +415,7 @@
             });
         }
 
-        // Modals Functionality
+        // Modals
         function openModal(modalId) {
             document.getElementById(modalId).style.display = 'flex';
             document.body.style.overflow = 'hidden';
@@ -621,45 +426,33 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Close Modal when clicking outside
-        window.onclick = function(event) {
-            if (event.target.classList.contains('modal')) {
-                event.target.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
+        // Auto Select Product & Fill Form
+        function selectProductToOrder(category, productName, selectId) {
+            const selectedSize = document.getElementById(selectId).value;
+            
+            document.getElementById('kategoriInput').value = category;
+            document.getElementById('pesanInput').value = `Saya berminat memesan:\n• Produk: ${productName}\n• Ukuran: ${selectedSize}\n• Jumlah: [Isi Jumlah]\n• Lokasi Kirim: [Isi Lokasi]`;
+
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+
+            setTimeout(() => {
+                document.getElementById('namaInput').focus();
+            }, 600);
         }
 
-        // Form Submission handler (Integrasi WhatsApp)
+        // WhatsApp Submission
         function handleFormSubmit(e) {
             e.preventDefault();
-            
-            // Ambil nomor WA tujuan
             const whatsappNo = "6285877435417";
 
-            // Ambil data dari formulir
             const nama = document.getElementById('namaInput').value;
             const kontak = document.getElementById('kontakInput').value;
             const kategori = document.getElementById('kategoriInput').value;
             const pesan = document.getElementById('pesanInput').value;
 
-            // Format teks pesan WhatsApp
-            const textWhatsApp = `Halo HAG Tires, saya ingin mengajukan inquiry/pemesanan via Website:
+            const textWhatsApp = `Halo HAG Tires, saya ingin mengajukan pemesanan via Website:\n\n*Detail Pelanggan:*\n• *Nama / Perusahaan:* ${nama}\n• *Kontak:* ${kontak}\n\n*Detail Pemesanan:*\n• *Kategori:* ${kategori}\n• *Detail Pesanan:*\n${pesan}`;
 
-*Detail Pelanggan:*
-• *Nama / Perusahaan:* ${nama}
-• *Kontak:* ${kontak}
-
-*Detail Pemesanan:*
-• *Kategori Produk:* ${kategori}
-• *Pesan / Detail Ukuran & Jumlah:* 
-${pesan}
-
-Mohon dapat diinformasikan penawaran harganya. Terima kasih!`;
-
-            // Enkripsi teks ke URL
             const encodedText = encodeURIComponent(textWhatsApp);
-            
-            // Buka tautan WhatsApp di tab baru
             window.open(`https://wa.me/${whatsappNo}?text=${encodedText}`, '_blank');
         }
     </script>
