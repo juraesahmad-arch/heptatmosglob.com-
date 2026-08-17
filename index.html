@@ -32,7 +32,17 @@
 
     <!-- Hero / Landing Page Section -->
     <section class="hero" id="home">
-        <div class="container">
+        <!-- Video Latar Belakang -->
+        <video autoplay muted loop playsinline class="hero-video-bg">
+            <source src="WhatsApp Video 2026-08-17 at 10.56.08.mp4" type="video/mp4">
+            Browser Anda tidak mendukung tag video.
+        </video>
+        
+        <!-- Overlay Gelap -->
+        <div class="hero-overlay"></div>
+
+        <!-- Konten Hero -->
+        <div class="container hero-container">
             <div class="hero-content">
                 <span class="hero-subtitle"><i class="fas fa-shield-alt"></i> Official Tire Catalogue & Company Profile</span>
                 <h1 class="hero-title">Crafted for Performance. <span>Engineered for Reliability.</span></h1>
@@ -143,7 +153,7 @@
             <div class="section-header">
                 <span class="section-tag">E-Katalog Lengkap</span>
                 <h2 class="section-title">Katalog Produk HAG</h2>
-                <p class="section-desc">Pilih ukuran spesifik produk, lalu klik tombol untuk isi form otomatis.</p>
+                <p class="section-desc">Pilih ukuran produk, lalu klik tombol untuk langsung terhubung ke WhatsApp kami.</p>
             </div>
 
             <!-- Filter Buttons -->
@@ -189,7 +199,7 @@
                         </div>
 
                         <div class="card-actions">
-                            <button class="btn btn-primary" onclick="selectProductToOrder('Ban Solid Forklift', 'HAG Solid Tire S2000', 'size-S2000')"><i class="fab fa-whatsapp"></i> Pesan Ukuran Ini</button>
+                            <button class="btn btn-primary" onclick="directOrderToWhatsApp('Ban Solid Forklift', 'HAG Solid Tire S2000', 'size-S2000')"><i class="fab fa-whatsapp"></i> Pesan Langsung via WA</button>
                             <button class="btn btn-outline btn-specs" onclick="openModal('modalS2000')"><i class="fas fa-table"></i> Tabel Specs</button>
                         </div>
                     </div>
@@ -217,7 +227,7 @@
                         </div>
 
                         <div class="card-actions">
-                            <button class="btn btn-primary" onclick="selectProductToOrder('Ban Truk Radial Heavy Duty', 'TKAM HD / SUPER AM S', 'size-TKAM')"><i class="fab fa-whatsapp"></i> Pesan Ukuran Ini</button>
+                            <button class="btn btn-primary" onclick="directOrderToWhatsApp('Ban Truk Radial Heavy Duty', 'TKAM HD / SUPER AM S', 'size-TKAM')"><i class="fab fa-whatsapp"></i> Pesan Langsung via WA</button>
                             <button class="btn btn-outline btn-specs" onclick="openModal('modalS2000')"><i class="fas fa-table"></i> Tabel Specs</button>
                         </div>
                     </div>
@@ -246,7 +256,7 @@
                         </div>
 
                         <div class="card-actions">
-                            <button class="btn btn-primary" onclick="selectProductToOrder('Ban Dalam & Flap', 'Heavy Duty Tube & Flap', 'size-Tube')"><i class="fab fa-whatsapp"></i> Pesan Ukuran Ini</button>
+                            <button class="btn btn-primary" onclick="directOrderToWhatsApp('Ban Dalam & Flap', 'Heavy Duty Tube & Flap', 'size-Tube')"><i class="fab fa-whatsapp"></i> Pesan Langsung via WA</button>
                             <button class="btn btn-outline btn-specs" onclick="openModal('modalS2000')"><i class="fas fa-table"></i> Tabel Specs</button>
                         </div>
                     </div>
@@ -274,7 +284,7 @@
                         </div>
 
                         <div class="card-actions">
-                            <button class="btn btn-primary" onclick="selectProductToOrder('Steel Wheel Rims (Pelek)', 'Steel Wheel Rims (Pelek)', 'size-Rims')"><i class="fab fa-whatsapp"></i> Pesan Ukuran Ini</button>
+                            <button class="btn btn-primary" onclick="directOrderToWhatsApp('Steel Wheel Rims (Pelek)', 'Steel Wheel Rims (Pelek)', 'size-Rims')"><i class="fab fa-whatsapp"></i> Pesan Langsung via WA</button>
                             <button class="btn btn-outline btn-specs" onclick="openModal('modalS2000')"><i class="fas fa-table"></i> Tabel Specs</button>
                         </div>
                     </div>
@@ -314,50 +324,20 @@
         </div>
     </div>
 
-    <!-- Contact & Form Section -->
+    <!-- Contact Info Section -->
     <section class="contact-section" id="contact">
         <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Hubungi Kami</span>
-                    <h3>Siap Melayani Armada Anda</h3>
-                    <p>Dapatkan penawaran harga khusus grosir dan pengadaan armada fleet.</p>
+            <div class="contact-info" style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <span class="section-tag">Hubungi Kami</span>
+                <h3>Siap Melayani Armada Anda</h3>
+                <p>Dapatkan penawaran harga khusus grosir dan pengadaan armada fleet langsung dari tim sales kami.</p>
 
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-                        <div class="contact-details">
-                            <h5>Telepon / WhatsApp</h5>
-                            <p>+62 858-8136-4710</p>
-                        </div>
+                <div class="contact-item" style="justify-content: center; margin-top: 2rem; display: flex; align-items: center; gap: 1rem;">
+                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="contact-details" style="text-align: left;">
+                        <h5>Telepon / WhatsApp</h5>
+                        <p>+62 858-8136-4710</p>
                     </div>
-                </div>
-
-                <div class="contact-form">
-                    <h4>Formulir Pemesanan</h4>
-                    <form onsubmit="handleFormSubmit(event)">
-                        <div class="form-group">
-                            <label>Nama Lengkap / Perusahaan</label>
-                            <input type="text" id="namaInput" class="form-control" placeholder="Nama Anda / Perusahaan" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Nomor WhatsApp</label>
-                            <input type="text" id="kontakInput" class="form-control" placeholder="0812..." required>
-                        </div>
-                        <div class="form-group">
-                            <label>Kategori Produk</label>
-                            <select id="kategoriInput" class="form-control">
-                                <option value="Ban Solid Forklift">Ban Solid Forklift</option>
-                                <option value="Ban Truk Radial Heavy Duty">Ban Truk Radial Heavy Duty</option>
-                                <option value="Ban Dalam & Flap">Ban Dalam & Flap</option>
-                                <option value="Steel Wheel Rims (Pelek)">Steel Wheel Rims (Pelek)</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Detail Pesanan / Ukuran</label>
-                            <textarea id="pesanInput" class="form-control" placeholder="Pesan ukuran akan otomatis terisi di sini..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fab fa-whatsapp"></i> Kirim Ke WhatsApp</button>
-                    </form>
                 </div>
             </div>
         </div>
@@ -426,31 +406,12 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Auto Select Product & Fill Form
-        function selectProductToOrder(category, productName, selectId) {
-            const selectedSize = document.getElementById(selectId).value;
-            
-            document.getElementById('kategoriInput').value = category;
-            document.getElementById('pesanInput').value = `Saya berminat memesan:\n• Produk: ${productName}\n• Ukuran: ${selectedSize}\n• Jumlah: [Isi Jumlah]\n• Lokasi Kirim: [Isi Lokasi]`;
-
-            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-
-            setTimeout(() => {
-                document.getElementById('namaInput').focus();
-            }, 600);
-        }
-
-        // WhatsApp Submission
-        function handleFormSubmit(e) {
-            e.preventDefault();
+        // Direct Order to WhatsApp
+        function directOrderToWhatsApp(category, productName, selectId) {
             const whatsappNo = "6285881364710";
+            const selectedSize = document.getElementById(selectId).value;
 
-            const nama = document.getElementById('namaInput').value;
-            const kontak = document.getElementById('kontakInput').value;
-            const kategori = document.getElementById('kategoriInput').value;
-            const pesan = document.getElementById('pesanInput').value;
-
-            const textWhatsApp = `Halo HAG Tires, saya ingin mengajukan pemesanan via Website:\n\n*Detail Pelanggan:*\n• *Nama / Perusahaan:* ${nama}\n• *Kontak:* ${kontak}\n\n*Detail Pemesanan:*\n• *Kategori:* ${kategori}\n• *Detail Pesanan:*\n${pesan}`;
+            const textWhatsApp = `Halo HAG Tires, saya ingin memesan langsung dari katalog website:\n\n*Detail Produk:*\n• *Kategori:* ${category}\n• *Nama Produk:* ${productName}\n• *Ukuran / Spesifikasi:* ${selectedSize}\n\nMohon info ketersediaan stok dan penawaran harganya. Terima kasih!`;
 
             const encodedText = encodeURIComponent(textWhatsApp);
             window.open(`https://wa.me/${whatsappNo}?text=${encodedText}`, '_blank');
